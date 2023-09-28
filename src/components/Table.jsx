@@ -11,12 +11,17 @@ const ModalContext = createContext()
 
 export default function Table(){
     const [open, setOpen] = useState(false)
+    const [modalData, setModalData] = useState("")
 
-    function toggleModal(){
+    function toggleModal(element){
+        
+        setModalData(element)
         setOpen((prevState)=> !prevState)
     }
+
+
     return(
-        <ModalContext.Provider value={setOpen}>
+        <ModalContext.Provider value={toggleModal}>
 
       
 
@@ -24,7 +29,8 @@ export default function Table(){
             <button onClick={toggleModal}>Open Modal</button>
             <Modal 
             open={open}
-            toggleModal={toggleModal} 
+            toggleModal={toggleModal}
+            modalData={modalData}
             />
 
             <FirstRow data={data.elements} />

@@ -13,7 +13,7 @@ export default function Element({ elementData }){
 
     return(
         <div 
-        onClick={modalContext} 
+        onClick={()=>modalContext(elementData)} 
 
         className={`bg-${color}-500 cursor-pointer hover:bg-violet-600`}>
 
@@ -21,7 +21,7 @@ export default function Element({ elementData }){
                     <p className={`text-xs text-${color}-100`}>{number}</p>
                     <h1 className="font-bold" >{symbol} </h1>
                 
-                 </div>}
+                </div>}
         </div>
        
     )
