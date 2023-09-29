@@ -4,7 +4,7 @@ export default function Modal({ open, toggleModal, modalData }){
 
     const modalOpen = open ? " " : "hidden";
 
-            const { name, symbol, appearance, summary, bohr_model_3d, atomic_mass, source  } = modalData
+            const { name, symbol, appearance, summary, bohr_model_3d: spectral_img, atomic_mass, source, category, group  } = modalData
     return (
         <>         
 
@@ -29,7 +29,6 @@ export default function Modal({ open, toggleModal, modalData }){
            
             <div className="p-6 space-y-6">
  
-                <img src={bohr_model_3d} />
 
                 {/* <p text-base leading-relaxed text-gray-500 dark:text-gray-400>{title}</p> */}
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
@@ -38,7 +37,11 @@ export default function Modal({ open, toggleModal, modalData }){
 
                 <div className='flex'>
                     <Label >Atomic Mass: {atomic_mass}</Label>
-                    <p className='bg-gray-300 rounded-full px-6 ml-4'>Label</p>
+                    <Label >Appearance: {appearance}</Label>
+                </div>
+                <div className='flex'>
+                    <Label >Category: {category}</Label>
+                    <Label >Group: {group}</Label>
                 </div>
             
             </div>
