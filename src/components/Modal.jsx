@@ -1,4 +1,3 @@
-import { FaEye } from 'react-icons/fa';
 import Label from './Label';
 export default function Modal({ open, toggleModal, modalData }){
 
@@ -25,12 +24,8 @@ export default function Modal({ open, toggleModal, modalData }){
                 </button>
             </div>
 
-
-           
             <div className="p-6 space-y-6">
  
-
-                {/* <p text-base leading-relaxed text-gray-500 dark:text-gray-400>{title}</p> */}
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                     {summary}
                 </p>

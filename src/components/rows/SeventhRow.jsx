@@ -10,7 +10,7 @@ export default function SeventhhRow({ data }){
                     <Element elementData={data[86]} />
                     <Element elementData={data[87]} />
                     <Element 
-                        series="anthanides" 
+                        series="Actinides" 
                         from="57-71"
                     />
                     <Element elementData={data[103]} />
