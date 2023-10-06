@@ -1,6 +1,6 @@
 import Element from "../Element"
 
-export default function Anthanides({ data }){
+export default function Actinides({ data }){
     return(
         <div className="">
 

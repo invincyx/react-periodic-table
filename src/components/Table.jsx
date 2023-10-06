@@ -8,7 +8,7 @@ import Modal from "./Modal"
 import { useState, createContext } from "react"
 import SixthRow from "./rows/SixthRow"
 import SeventhhRow from "./rows/SeventhRow"
-import Anthanides from "./rows/anthanides"
+import Actinides from "./rows/Actinides"
 import Lanthanides from "./rows/Lanthanides"
 
 const ModalContext = createContext()
@@ -42,7 +42,7 @@ export default function Table(){
             <SixthRow data={data.elements} />
             <SeventhhRow data={data.elements} />
             <Lanthanides data={data.elements} />
-            <Anthanides data={data.elements} />
+            <Actinides data={data.elements} />
 
         </div>
         </ModalContext.Provider>
