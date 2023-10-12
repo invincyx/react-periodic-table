@@ -1,8 +1,10 @@
 import { useContext, useState } from "react"
 import { ModalContext } from "./Table"
 
+
 export default function Element({ elementData, series, from }){
     const modalContext = useContext(ModalContext)
+    const [isFocused, setFocus] = useState(false)
 
 
     let color = "white"
@@ -26,19 +28,26 @@ export default function Element({ elementData, series, from }){
 
     const style = {
         backgroundColor: color,
-        // color: 'white'
     }
 
-    
+    const hoverStyle ={
+        backgroundColor: "#504A4B",
+    }
+
 
     return(
         <div 
-       
+    
         onClick={()=> elementData?  modalContext(elementData): console.log('no modal will be shown')} 
+        onMouseEnter={() => setFocus(true)}
+        onMouseLeave={() => setFocus(false)}
 
         className={`bg-${color}-900 cursor-pointer hover:bg-gray-100 `}
-        style={style}
+        style={isFocused ? hoverStyle: style}
+       
         >
+          
+           
             {from && <div className="border border-white py-6 m-0"> 
                     <h1 className="font-bold text-white" >{from} </h1>
                     <p className="text-xs tracking-tighter text-white">{series}</p>
