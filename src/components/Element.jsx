@@ -42,8 +42,8 @@ export default function Element({ elementData, series, from }){
         onMouseEnter={() => setFocus(true)}
         onMouseLeave={() => setFocus(false)}
 
-        className={`bg-${color}-900 cursor-pointer hover:bg-gray-100 `}
-        style={isFocused ? hoverStyle: style}
+        className={ elementData ? `bg-${color}-900 cursor-pointer hover:bg-gray-100 `: ""}
+        style={isFocused && elementData ? hoverStyle: style}
        
         >
           
