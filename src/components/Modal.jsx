@@ -7,7 +7,7 @@ export default function Modal({ open, toggleModal, modalData }){
     return (
         <>         
 
-<div id="defaultModal" tabindex="-1" aria-hidden="true" className={`fixed flex items-center justify-center ${modalOpen}  z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full`}>
+<div id="defaultModal" tabindex="-1" aria-hidden="true" className={`fixed flex items-center justify-center ${modalOpen}  z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0  max-h-full`} style={{ backdropFilter: 'brightness(0.7)', top: 0, bottom: 0, left: 0, right: 0, height: '100vh' }}>
     <div className="relative w-full max-w-2xl max-h-full">
      
         <div className="relative bg-gray-100 rounded-lg shadow dark:bg-gray-700">

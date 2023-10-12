@@ -26,7 +26,7 @@ export default function Table(){
 
     return(
         <ModalContext.Provider value={toggleModal}>
-        <div className="">
+        <div className="backdrop">
             <h1 className="text-3xl font-bold text-gray-700">The Periodic Table of Elements</h1>
             <Modal 
             open={open}
