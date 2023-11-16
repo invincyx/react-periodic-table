@@ -1,13 +1,18 @@
 import { useContext, useState } from "react"
 import { ModalContext } from "./Table"
+import { ThemeContext } from "../App"
 
 
 export default function Element({ elementData, series, from }){
     const modalContext = useContext(ModalContext)
     const [isFocused, setFocus] = useState(false)
+    const themeContext = useContext(ThemeContext)
+
+    
 
 
-    let color = "white"
+    let color = themeContext ?"#1e293b": "white"
+    
     if (elementData && elementData.category === "alkaline earth metal") color="#f97927"
     if (elementData && elementData.category === "alkali metal") color = "#fdc235"
     if (elementData && elementData.category === "transition metal") color = "#2685c1"
@@ -34,6 +39,8 @@ export default function Element({ elementData, series, from }){
         backgroundColor: "#504A4B",
     }
 
+    let darkModeBorder = themeContext ? "border-slate-800":"border-white"
+
 
     return(
         <div 
@@ -42,19 +49,19 @@ export default function Element({ elementData, series, from }){
         onMouseEnter={() => setFocus(true)}
         onMouseLeave={() => setFocus(false)}
 
-        className={ elementData ? `bg-${color}-900 cursor-pointer hover:bg-gray-100 `: ""}
-        style={isFocused && elementData ? hoverStyle: style}
-       
-        >
+        className={ elementData ? `bg-${color}-900 cursor-pointer hover:bg-gray-100 rounded`: ""}
+        style={isFocused && elementData ? hoverStyle: style}>
           
-           
-            {from && <div className="border border-white py-6 m-0"> 
+
+
+
+            {from && <div className={`border ${darkModeBorder} py-6 m-0`}> 
                     <h1 className="font-bold text-white" >{from} </h1>
                     <p className="text-xs tracking-tighter text-white">{series}</p>
                 
                 </div>}    
 
-                {elementData && <div className="border border-gray-100 py-4 m-0"> 
+                {elementData && <div className={`border  ${darkModeBorder} py-4 m-0`}> 
                     <p className={`text-xs text-white`}>{elementData.number}</p>
                     <h1 className="font-bold text-white" >{elementData.symbol} </h1>
                     <p className="text-xs tracking-tighter text-white">{elementData.name}</p>

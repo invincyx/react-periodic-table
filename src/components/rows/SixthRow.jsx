@@ -5,7 +5,7 @@ export default function SixthRow({ data }){
         <div className="">
 
             <div className="flex">
-                <div className="w-1/2 grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                   
                     <Element elementData={data[54]} />
                     <Element elementData={data[55]} />
@@ -20,7 +20,7 @@ export default function SixthRow({ data }){
                     <Element elementData={data[75]} />
                     <Element elementData={data[76]} />
                 </div>
-                <div className="w-1/2  grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     
                     
                     <Element elementData={data[77]} />

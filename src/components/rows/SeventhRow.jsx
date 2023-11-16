@@ -5,7 +5,7 @@ export default function SeventhhRow({ data }){
         <div className="">
 
             <div className="flex">
-                <div className="w-1/2 grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                   
                     <Element elementData={data[86]} />
                     <Element elementData={data[87]} />
@@ -21,7 +21,7 @@ export default function SeventhhRow({ data }){
                     <Element elementData={data[108]} />
                     
                 </div>
-                <div className="w-1/2  grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     
                     <Element elementData={data[109]} />
                     <Element elementData={data[110]} />

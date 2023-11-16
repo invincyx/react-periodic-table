@@ -5,7 +5,7 @@ export default function FifthRow({ data }){
         <div className="">
 
             <div className="flex">
-                <div className="w-1/2 grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                   
                     <Element elementData={data[36]} />
                     <Element elementData={data[37]} />
@@ -17,7 +17,7 @@ export default function FifthRow({ data }){
                     <Element elementData={data[43]} />
                     <Element elementData={data[44]} />
                 </div>
-                <div className="w-1/2  grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     
                     
                     <Element elementData={data[45]} />

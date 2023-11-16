@@ -5,7 +5,7 @@ export default function SecondRow({ data }){
         <div className="">
 
             <div className="flex">
-                <div className="w-1/2 grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
               
                     <Element elementData={data[2]} />
                     <Element elementData={data[3]} />
@@ -18,7 +18,7 @@ export default function SecondRow({ data }){
                     <div className="">  </div>
 
                 </div>
-                <div className="w-1/2  grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     <div className="">  </div>
                     <div className="">  </div>
                     <div className="">  </div>

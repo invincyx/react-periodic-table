@@ -5,7 +5,7 @@ export default function FourthRow({ data }){
         <div className="">
 
             <div className="flex">
-                <div className="w-1/2 grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     
                     <Element elementData={data[18]} />
                     <Element elementData={data[19]} />
@@ -18,7 +18,7 @@ export default function FourthRow({ data }){
                     <Element elementData={data[26]} />
 
                 </div>
-                <div className="w-1/2  grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     <Element elementData={data[27]} />
                     <Element elementData={data[28]} />
                     <Element elementData={data[29]} />

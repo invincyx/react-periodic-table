@@ -5,7 +5,7 @@ export default function ThirdRow({ data }){
         <div className="">
 
             <div className="flex">
-                <div className="w-1/2 grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     <Element elementData={data[10]} />
                     <Element elementData={data[11]} />
                     <div className=""> </div>
@@ -18,7 +18,7 @@ export default function ThirdRow({ data }){
                     <div className="">  </div>
 
                 </div>
-                <div className="w-1/2  grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     <div className="">  </div>
                     <div className="">  </div>
                     <div className=""> </div>

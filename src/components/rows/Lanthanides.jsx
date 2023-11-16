@@ -5,7 +5,7 @@ export default function Lanthanides({ data }){
         <div className="">
 
             <div className="flex mt-4">
-                <div className="w-1/2 grid grid-cols-9">
+                <div className="md:w-1/2 w-full md:grid md:grid-cols-9">
                     
                     <Element />
                     <Element  />
@@ -18,7 +18,7 @@ export default function Lanthanides({ data }){
                     <Element elementData={data[62]} />
 
                 </div>
-                <div className="w-1/2  grid grid-cols-9">
+                <div className="w-full md:w-1/2  md:grid md:grid-cols-9">
                     <Element elementData={data[63]} />
                     <Element elementData={data[64]} />
                     <Element elementData={data[65]} />
