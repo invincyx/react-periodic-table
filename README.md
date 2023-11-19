@@ -3,7 +3,8 @@
 This a periodic table created with React and Tailwind 
 Preview it here: https://animated-kringle-ecb562.netlify.app/
 
-![image](https://github.com/invincyx/react-periodic-table/assets/40611131/0c00b80e-d7a0-4f89-baef-c5b2bd6deed7)
+![image](https://github.com/invincyx/react-periodic-table/assets/40611131/d1d9d5a3-b600-4d8a-9462-01c60c8182a0)
+
 
 
 Dark Mode
